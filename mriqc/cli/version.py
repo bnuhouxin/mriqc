@@ -19,7 +19,7 @@ def check_latest():
     date = None
     outdated = None
     cachefile = Path.home() / ".cache" / "mriqc" / "latest"
-        try:
+    try:
         cachefile.parent.mkdir(parents=True, exist_ok=True)
     except OSError:
         cachefile = None
